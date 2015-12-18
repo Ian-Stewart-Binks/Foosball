@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script>
     $(function() {
@@ -12,7 +13,7 @@
 </head>
 <body>
 
-<h1 align="center" class="bg-primary">Foosball rules</h1>
+<h1 id="foosball-rules-header" align="center" class="bg-primary">Foosball rules</h1>
 <div id="accordion">
 
     <h3> Throw-in policy:</h3>
@@ -80,5 +81,9 @@
         </ul>
     </div>
 </div>
+</body>
+<script>
+    d3.select("#foosball-rules-header").style("opacity", 0).transition().duration(1000).style("opacity", 1);
+</script>
 </html>
 
