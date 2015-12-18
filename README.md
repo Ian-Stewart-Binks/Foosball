@@ -1,2 +1,2 @@
 # Foosball
-Toronto office Foosball website repo.
+Toronto Red Hat office Foosball website repo.
