@@ -1,0 +1,26 @@
+{
+  "name": "foosball",
+  "version": "0.0.1",
+  "description": "Foosball site for the Toronto Red Hat interns.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ian-Stewart-Binks/foosball.git"
+  },
+  "keywords": [
+    "lizards",
+    "fire"
+  ],
+  "author": "Ian Stewart-Binks",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Ian-Stewart-Binks/foosball/issues"
+  },
+  "homepage": "https://github.com/Ian-Stewart-Binks/foosball#readme",
+  "devDependencies": {
+    "express": "^4.13.3"
+  }
+}
