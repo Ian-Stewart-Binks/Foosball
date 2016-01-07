@@ -11,11 +11,12 @@
     "url": "git+https://github.com/Ian-Stewart-Binks/foosball.git"
   },
   "keywords": [
-    "lizards",
-    "fire"
+    "foosball",
+    "Red Hat",
+    "John Wellman"
   ],
   "author": "Ian Stewart-Binks",
-  "license": "GPL-2.0",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/Ian-Stewart-Binks/foosball/issues"
   },
