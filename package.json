@@ -25,7 +25,6 @@
     "express": "^4.13.3",
     "grunt": "^0.4.5",
     "react": "^0.14.6",
-    "react-bootstrap": "^0.28.2",
     "react-dom": "^0.14.6"
   },
   "dependencies": {
