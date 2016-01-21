@@ -1,10 +1,16 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script type='text/babel' src="js/header.js"></script>
 <script>
     $(function() {
         $("#accordion").accordion();
@@ -12,85 +18,83 @@
 </script>
 </head>
 <body>
+    <div id="header"></div>
 
-<h1 id="foosball-rules-header" align="center" class="bg-primary">Foosball rules</h1>
-<div id="accordion">
-
-    <h3> Winning conditions:</h3>
-    <div>
-        <ul>
-            <li>The first team to reach eight points wins, so long as the other team does not have seven points when they do so.</li>
-            <li>If a team reaches eight points while the other has seven then the game continues until one team has <b>two</b> more points than the other team. Once this occurs the leading team wins.</li>
-        </ul>
-    </div>
-    <h3> Throw-in policy:</h3>
-    <div>
-        <ul>
-            <li> Instead of throwing the ball in from the side of the arena, the ball is placed at the mids of one of the teams.</li>
-            <li> Every game starts with rock-paper-scissors. The winner of the rps game gets possession of the ball first, i.e. the ball is placed at their mids first.</li>
-            <li> On subsequent throw-ins, the ball is placed at the mids of the team who lost the point.</li>
-            <li> Goals scored on first touch do not count.</li>
-            <li> The ball must be placed at the middle player.</li>
-            <li> Once the ball has been placed, and the hand has been taken off the ball, the ball may not be moved. If the ball is 'dead', the dead ball rule is consulted. </li>
-        </ul>
-    </div>
-    <h3> Knocked out ball:</h3>
-    <div>
-        <ul>
-            <li> If the ball is knocked out, it is placed at the mids of the team who lost the last point.</li>
-        </ul>
-    </div>
-    <h3> Dead ball:</h3>
-    <div>
-        <ul>
-            <li> Both teams must agree that a ball is dead before any player touches the ball.</li>
-            <li> If the ball is dead and near the center, it is placed at the mids of the team who lost the last point.</li>
-            <li> If the ball is ahead of a teams forwards, it is placed at the nearest corner.</li>
-        </ul>
-    </div>
-    <h3> Beers:</h3>
-    <div>
-        <ul>
-            <li> Beering must be declared and agreed upon by both team members at the beginning of a game. </li>
-            <li> If a team loses without scoring a single goal, that team must buy the other team a beer. </li>
+    <div id="accordion">
+        <h3> Winning conditions:</h3>
+        <div>
             <ul>
-                <li> 1v1 case: loser buys winner a beer </li>
-                <li> 2v2 case: forward loser buys forward winner a beer, defender loser buys defender winner a beer</li>
-                <li> 2v1 case: If the single player team loses, they must buy a beer for each other player. If the duo team loses, they must each buy the opposing team a beer.</li>
+                <li>The first team to reach eight points wins, so long as the other team does not have seven points when they do so.</li>
+                <li>If a team reaches eight points while the other has seven then the game continues until one team has <b>two</b> more points than the other team. Once this occurs the leading team wins.</li>
             </ul>
-        </ul>
-    </div>
-    <h3>Moving of the table:</h3>
-    <div>
-        <ul>
-            <li> No moving of the table.</li>
-        </ul>
-    </div>
-    <h3>Spinning:</h3>
-    <div>
-        <ul>
-            <li>Spins are not allowed.</li>
-        </ul>
-        <ul>
-            <li>What's a spin?</li>
+        </div>
+        <h3> Throw-in policy:</h3>
+        <div>
             <ul>
-                <li>If it looks like a spin.</li>
-                <li>If it smells like a spin.</li>
-                <li>If it tastes like a spin.</li>
-                <li>It's a spin.</li>
+                <li> Instead of throwing the ball in from the side of the arena, the ball is placed at the mids of one of the teams.</li>
+                <li> Every game starts with rock-paper-scissors. The winner of the rps game gets possession of the ball first, i.e. the ball is placed at their mids first.</li>
+                <li> On subsequent throw-ins, the ball is placed at the mids of the team who lost the point.</li>
+                <li> Goals scored on first touch do not count.</li>
+                <li> The ball must be placed at the middle player.</li>
+                <li> Once the ball has been placed, and the hand has been taken off the ball, the ball may not be moved. If the ball is 'dead', the dead ball rule is consulted. </li>
             </ul>
-        </ul>
+        </div>
+        <h3> Knocked out ball:</h3>
+        <div>
+            <ul>
+                <li> If the ball is knocked out, it is placed at the mids of the team who lost the last point.</li>
+            </ul>
+        </div>
+        <h3> Dead ball:</h3>
+        <div>
+            <ul>
+                <li> Both teams must agree that a ball is dead before any player touches the ball.</li>
+                <li> If the ball is dead and near the center, it is placed at the mids of the team who lost the last point.</li>
+                <li> If the ball is ahead of a teams forwards, it is placed at the nearest corner.</li>
+            </ul>
+        </div>
+        <h3> Beers:</h3>
+        <div>
+            <ul>
+                <li> Beering must be declared and agreed upon by both team members at the beginning of a game. </li>
+                <li> If a team loses without scoring a single goal, that team must buy the other team a beer. </li>
+                <ul>
+                    <li> 1v1 case: loser buys winner a beer </li>
+                    <li> 2v2 case: forward loser buys forward winner a beer, defender loser buys defender winner a beer</li>
+                    <li> 2v1 case: If the single player team loses, they must buy a beer for each other player. If the duo team loses, they must each buy the opposing team a beer.</li>
+                </ul>
+            </ul>
+        </div>
+        <h3>Moving of the table:</h3>
+        <div>
+            <ul>
+                <li> No moving of the table.</li>
+            </ul>
+        </div>
+        <h3>Spinning:</h3>
+        <div>
+            <ul>
+                <li>Spins are not allowed.</li>
+            </ul>
+            <ul>
+                <li>What's a spin?</li>
+                <ul>
+                    <li>If it looks like a spin.</li>
+                    <li>If it smells like a spin.</li>
+                    <li>If it tastes like a spin.</li>
+                    <li>It's a spin.</li>
+                </ul>
+            </ul>
+        </div>
+        <h3>Time outs:</h3>
+        <div>
+            <ul>
+                <li>Each team is allowed two time outs per game during which the players may leave the table. Such time outs shall not exceed 30 seconds. If the ball is in play, time out may be called only by the team in possession of the ball, and then only if the ball is completely stopped. If the ball is not in play, either team may call time out.</li>
+            </ul>
+        </div>
     </div>
-    <h3>Time outs:</h3>
-    <div>
-        <ul>
-            <li>Each team is allowed two time outs per game during which the players may leave the table. Such time outs shall not exceed 30 seconds. If the ball is in play, time out may be called only by the team in possession of the ball, and then only if the ball is completely stopped. If the ball is not in play, either team may call time out.</li>
-        </ul>
-    </div>
-</div>
 </body>
 <script>
     d3.select("#foosball-rules-header").style("opacity", 0).transition().duration(1000).style("opacity", 1);
 </script>
 </html>
-
