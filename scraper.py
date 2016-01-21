@@ -17,6 +17,9 @@ class Section:
     def add_rule(self, rule):
         self.rules.append(rule)
 
+    def __repr__(self):
+        return self.title
+
 
 def get_rule_ids(soup):
     link_children = soup.find('strong', text="Links to Rules:").parent.children
@@ -38,6 +41,8 @@ if __name__ == '__main__':
     ids = map(lambda x : x[1:], ids)
     for id_ in ids:
         elem = soup.find('a', {'name': id_})
-        print elem
+        title = elem.text
+        section = Section(title)
+        print section
 
 
