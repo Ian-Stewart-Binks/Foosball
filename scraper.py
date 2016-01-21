@@ -33,3 +33,11 @@ def build_rule(id_):
 
 print get_rule_ids(soup)
 
+if __name__ == '__main__':
+    ids = get_rule_ids(soup)
+    ids = map(lambda x : x[1:], ids)
+    for id_ in ids:
+        elem = soup.find('a', {'name': id_})
+        print elem
+
+
