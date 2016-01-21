@@ -9,13 +9,13 @@ class Rule:
         self.description = description
 
 class Section:
-    rules = []
     
     def __init__(self, title):
         self.title = title
+        self.rules = []
 
-    def add_rule(rule):
-        rules.append(rule)
+    def add_rule(self, rule):
+        self.rules.append(rule)
 
 
 def get_rule_ids(soup):
