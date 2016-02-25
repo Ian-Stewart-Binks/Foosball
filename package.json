@@ -4,7 +4,8 @@
   "description": "Foosball site for the Toronto Red Hat interns.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo 'test me!'"
   },
   "repository": {
     "type": "git",
