@@ -1,8 +1,4 @@
-var headerId = "foosball-header"
-
-var headerStyle = {
-  textAlign: 'center'
-};
+var headerId = 'foosball-header';
 
 var Header = React.createClass({
     render: function() {
@@ -30,4 +26,4 @@ ReactDOM.render(
     document.getElementById('header')
 );
 
-d3.select("#" + headerId).style("opacity", 0).transition().duration(1000).style("opacity", 1);
+d3.select('#' + headerId).style('opacity', 0).transition().duration(1000).style('opacity', 1);
