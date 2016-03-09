@@ -4,7 +4,7 @@ module.exports = function(grunt) {
             all: ['*.js', './public/js/*']
         },
         flake8: {
-            src: ['*.py', './']
+            src: ['util/**/*.py']
         }
     });
 
