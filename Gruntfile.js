@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         flake8: {
             options: {
                 verbose: true
-            }
+            },
             src: ['./util/**/*.py']
         }
     });
