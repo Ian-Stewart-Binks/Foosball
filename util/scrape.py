@@ -37,8 +37,8 @@ class Scraper:
     def _short(self):
         """Implmentation method for short html parse"""
         table = self._get_tables()
-        rule_dict = self._build_rule_dict(table)
-        self._write_rules(rule_dict)
+        rules = self._build_rules(table)
+        self._write_rules(rules)
 
     def _get_tables(self):
         """Get the table html text from the rules list"""
@@ -48,15 +48,18 @@ class Scraper:
         table_one.extend(table_two)
         return table_one
 
-    def _build_rule_dict(self, html):
+    def _build_rules(self, html):
         """Build the tree of rules as a dictionary"""
-        rule_dict = {}
-        for i in html:
-            i = self._cleanup_string(i)
+        rules = []
+        clean_html = map(self._cleanup_string, html)
+        for i in clean_html:
+            rule = {}
             rule_name = i[0]
-            rules = "".join(i[1:])
-            rule_dict[rule_name] = re.split("[A-Z]\.", rules)
-        return rule_dict
+            rule["name"] = rule_name
+            contents = "".join(i[1:])
+            rule["contents"] = re.split("[A-Z]\.", contents)
+            rules.append(rule)
+        return rules
 
     def _cleanup_string(self, string):
         """Cleanup gunk on strings new lines, tabs carriage returns etc"""
@@ -66,10 +69,10 @@ class Scraper:
         string = [j.strip("\t\r ") for j in string]
         return string
 
-    def _write_rules(self, rule_dict):
+    def _write_rules(self, rules):
         """Write the rules to a json file"""
         with open("rules.json", "w") as f:
-            json.dump(rule_dict, f)
+            json.dump(rules, f, indent=4)
 
 
 if __name__ == "__main__":
