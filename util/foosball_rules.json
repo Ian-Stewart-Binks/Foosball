@@ -1,5 +1,5 @@
 {
-    " Winning conditions": [
+    "Winning conditions": [
             "The first team to reach eight points wins, so long as the other team does not have seven points when they do so.",
             "If a team reaches eight points while the other has seven then the game continues until one team has <b>two</b> more points than the other team. Once this occurs the leading team wins."
         ],
@@ -22,7 +22,7 @@
             " If the ball is dead and near the center, it is placed at the mids of the team who lost the last point.",
             " If the ball is ahead of a teams forwards, it is placed at the nearest corner."
         ],
-    " Beers":
+    "Beers":
         [
             " Beering must be declared and agreed upon by both team members at the beginning of a game. ",
             " If a team loses without scoring a single goal, that team must buy the other team a beer. ",
