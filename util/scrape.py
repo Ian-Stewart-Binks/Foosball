@@ -59,7 +59,7 @@ class Scraper:
 
     def _cleanup_string(self, string):
         """Cleanup gunk on strings new lines, tabs carriage returns etc"""
-        string = re.sub(" +"," ", string)
+        string = re.sub(" +", " ", string)
         string = string.encode("ascii", "ignore")
         string = string.split("\n")
         string = [j.strip("\t\r ") for j in string]
