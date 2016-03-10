@@ -1,54 +1,54 @@
 {
     " Winning conditions": [
-                "The first team to reach eight points wins, so long as the other team does not have seven points when they do so.",
-                "If a team reaches eight points while the other has seven then the game continues until one team has <b>two</b> more points than the other team. Once this occurs the leading team wins."
-            ],
-        "Throw-in policy":
+            "The first team to reach eight points wins, so long as the other team does not have seven points when they do so.",
+            "If a team reaches eight points while the other has seven then the game continues until one team has <b>two</b> more points than the other team. Once this occurs the leading team wins."
+        ],
+    "Throw-in policy":
+        [
+            " Instead of throwing the ball in from the side of the arena, the ball is placed at the mids of one of the teams.",
+            " Every game starts with rock-paper-scissors. The winner of the rps game gets possession of the ball first, i.e. the ball is placed at their mids first.",
+            " On subsequent throw-ins, the ball is placed at the mids of the team who lost the point.",
+            " Goals scored on first touch do not count.",
+            " The ball must be placed at the middle player.",
+            " Once the ball has been placed, and the hand has been taken off the ball, the ball may not be moved. If the ball is 'dead', the dead ball rule is consulted. "
+        ],
+    "Knocked out ball":
+        [
+            " If the ball is knocked out, it is placed at the mids of the team who lost the last point."
+        ],
+    "Dead ball":
+        [
+            " Both teams must agree that a ball is dead before any player touches the ball.",
+            " If the ball is dead and near the center, it is placed at the mids of the team who lost the last point.",
+            " If the ball is ahead of a teams forwards, it is placed at the nearest corner."
+        ],
+    " Beers":
+        [
+            " Beering must be declared and agreed upon by both team members at the beginning of a game. ",
+            " If a team loses without scoring a single goal, that team must buy the other team a beer. ",
             [
-                " Instead of throwing the ball in from the side of the arena, the ball is placed at the mids of one of the teams.",
-                " Every game starts with rock-paper-scissors. The winner of the rps game gets possession of the ball first, i.e. the ball is placed at their mids first.",
-                " On subsequent throw-ins, the ball is placed at the mids of the team who lost the point.",
-                " Goals scored on first touch do not count.",
-                " The ball must be placed at the middle player.",
-                " Once the ball has been placed, and the hand has been taken off the ball, the ball may not be moved. If the ball is 'dead', the dead ball rule is consulted. "
-            ],
-        "Knocked out ball":
-            [
-                " If the ball is knocked out, it is placed at the mids of the team who lost the last point."
-            ],
-        "Dead ball":
-            [
-                " Both teams must agree that a ball is dead before any player touches the ball.",
-                " If the ball is dead and near the center, it is placed at the mids of the team who lost the last point.",
-                " If the ball is ahead of a teams forwards, it is placed at the nearest corner."
-            ],
-        " Beers":
-            [
-                " Beering must be declared and agreed upon by both team members at the beginning of a game. ",
-                " If a team loses without scoring a single goal, that team must buy the other team a beer. ",
-                [
-                    " 1v1 case: loser buys winner a beer "
-                    " 2v2 case: forward loser buys forward winner a beer, defender loser buys defender winner a beer",
-                    " 2v1 case: If the single player team loses, they must buy a beer for each other player. If the duo team loses, they must each buy the opposing team a beer."
-                ]
-            ],
-        "Moving of the table":
-            [
-                " No moving of the table."
-            ],
-        "Spinning":
-            [
-                "Spins are not allowed.",
-                "What's a spin?",
-                [
-                    "If it looks like a spin.",
-                    "If it smells like a spin.",
-                    "If it tastes like a spin.",
-                    "It's a spin."
-                ]
-            ],
-        "Time outs":
-            [
-                "Each team is allowed two time outs per game during which the players may leave the table. Such time outs shall not exceed 30 seconds. If the ball is in play, time out may be called only by the team in possession of the ball, and then only if the ball is completely stopped. If the ball is not in play, either team may call time out."
+                " 1v1 case: loser buys winner a beer "
+                " 2v2 case: forward loser buys forward winner a beer, defender loser buys defender winner a beer",
+                " 2v1 case: If the single player team loses, they must buy a beer for each other player. If the duo team loses, they must each buy the opposing team a beer."
             ]
+        ],
+    "Moving of the table":
+        [
+            " No moving of the table."
+        ],
+    "Spinning":
+        [
+            "Spins are not allowed.",
+            "What's a spin?",
+            [
+                "If it looks like a spin.",
+                "If it smells like a spin.",
+                "If it tastes like a spin.",
+                "It's a spin."
+            ]
+        ],
+    "Time outs":
+        [
+            "Each team is allowed two time outs per game during which the players may leave the table. Such time outs shall not exceed 30 seconds. If the ball is in play, time out may be called only by the team in possession of the ball, and then only if the ball is completely stopped. If the ball is not in play, either team may call time out."
+        ]
 }
