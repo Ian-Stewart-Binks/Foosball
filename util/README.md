@@ -13,9 +13,17 @@ Will produce a rules.json file containing the official foosball rules in a json 
 The resulting json has the following format:
 
 ```json
+[{
+      "name": "Rule Name",
+      "contents": ["rule contents"]
+},
 {
-    "Rule name" : ["list of rule's contents"],
-    "Other rule name" : ["list of other rule's contents"],
-    "..."
+      "name": "Other Rule Name",
+      "contents": ["rule contents"]
+},
+{
+      "name": "...",
+      "contents": ["..."]
 }
+]
 ```
