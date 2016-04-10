@@ -9,7 +9,6 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-eslint');
-    grunt.loadNpmTasks('grunt-flake8');    
     grunt.registerTask('lint', 'eslint');
-    grunt.registerTask('default', ['lint', 'flake8']);
+    grunt.registerTask('default', ['lint']);
 };
