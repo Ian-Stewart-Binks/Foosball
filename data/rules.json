@@ -49,7 +49,7 @@
     {
         "name": "Moving of the table", 
         "contents": [
-            "No moving of the table."
+            "No moving of the table when a point is in play. Moving of the table may happen in between points."
         ]
     }, 
     {
